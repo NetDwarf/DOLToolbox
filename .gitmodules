@@ -2,3 +2,6 @@
 	path = DOLSharp
 	url = https://github.com/NetDwarf/DOLSharp
 	branch = 1.9.7.3689
+[submodule "EODModelViewer"]
+	path = EODModelViewer
+	url = https://github.com/Eve-of-Darkness/EODModelViewer
