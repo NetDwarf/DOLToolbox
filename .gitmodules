@@ -1,0 +1,4 @@
+[submodule "DOLSharp"]
+	path = DOLSharp
+	url = https://github.com/NetDwarf/DOLSharp
+	branch = 1.9.7.3689
