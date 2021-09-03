@@ -1,6 +1,6 @@
 [submodule "DOLSharp"]
 	path = DOLSharp
-	url = https://github.com/NetDwarf/DOLSharp
+	url = https://github.com/Dawn-of-Light/DOLSharp
 	branch = 1.9.7.3689
 [submodule "EODModelViewer"]
 	path = EODModelViewer
