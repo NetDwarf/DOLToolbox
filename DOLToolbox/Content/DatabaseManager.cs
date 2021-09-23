@@ -29,7 +29,6 @@ namespace DOLToolbox
             typeof(MobXLootTemplate),
             typeof(LootTemplate),
             typeof(WorldObject),
-            typeof(DBDQRewardQ)
                 
         };
 
