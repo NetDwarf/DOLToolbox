@@ -1,0 +1,3 @@
+[submodule "DOLSharp"]
+	path = DOLSharp
+	url = https://github.com/Dawn-of-Light/DOLSharp.git
