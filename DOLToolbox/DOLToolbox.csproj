@@ -38,12 +38,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Windows.Forms" />
-    <PackageReference Include="log4net" Version="2.0.10" />
-    <PackageReference Include="MySql.Data" Version="6.9.10" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="MySql.Data" Version="8.0.25" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-    <Reference Include="DOLDatabase" HintPath="libs\DOLDatabase.dll" />
     <Reference Include="EODModelViewer" HintPath="libs\EODModelViewer.dll" />
-    <Reference Include="GameServer" HintPath="libs\GameServer.dll"/>
+    <ProjectReference Include="..\DOLSharp\GameServer\GameServer.csproj" />
+    <ProjectReference Include="..\DOLSharp\DOLDatabase\DOLDatabase.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\loading.gif">
