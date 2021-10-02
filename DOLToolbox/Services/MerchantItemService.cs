@@ -34,19 +34,16 @@ namespace DOLToolbox.Services
                 }
 
                 // update all items to the set ID
-                models
-                    .Where(x => !string.IsNullOrWhiteSpace(x.ItemListID))
-                    .ForEach(x => x.ItemListID = itemListId);
+                Util.ForEach(models.Where(x => !string.IsNullOrWhiteSpace(x.ItemListID)),
+                    x => x.ItemListID = itemListId);
 
                 // remove deleted
-                current
-                    .Where(x => !models.Select(s => s.ObjectId).Contains(x.ObjectId))
-                    .ForEach(x => DatabaseManager.Database.DeleteObject(x));
+                Util.ForEach(current.Where(x => !models.Select(s => s.ObjectId).Contains(x.ObjectId)),
+                    x => DatabaseManager.Database.DeleteObject(x));
 
                 // add new
-                models
-                    .Where(x => string.IsNullOrWhiteSpace(x.ItemListID))
-                    .ForEach(x =>
+                Util.ForEach(models.Where(x => string.IsNullOrWhiteSpace(x.ItemListID)),
+                    x =>
                     {
                         x.ItemListID = itemListId;
                         DatabaseManager.Database.AddObject(x);

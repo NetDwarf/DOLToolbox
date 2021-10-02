@@ -28,9 +28,6 @@ namespace DOLToolbox.Controls
 
             UserControl control = new DataQuestControl { Dock = DockStyle.Fill };
             tabData.Controls.Add(control);
-
-            control = new RewardQuestControl { Dock = DockStyle.Fill };
-            tabLos.Controls.Add(control);
         }
     }
 }
