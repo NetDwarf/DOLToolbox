@@ -24,7 +24,7 @@ jobs:
           then git log origin/master --first-parent  --format="%s%n%w(0,4,4)%b" "$last_version_tag".. | grep -v "^$" > patch_notes.txt; \
           sed -i '1s/^/```\n/' patch_notes.txt; \
           new_build_number=$((1+$(echo "$last_version_tag" | grep -oE "[0-9]+$"))); \
-          else new_build_number=0; \
+          else new_build_number=0; echo "```\nInitial Release" > patch_notes.txt; \
           fi;
           
           new_version_tag="$version"."$new_build_number";
